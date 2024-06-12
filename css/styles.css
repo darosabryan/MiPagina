@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+color general
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 144px;
+}
+
+body {
+  background-color: #202020;
+  color: #EEEEEE;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 144px auto 154px;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+nav {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+#Menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.abrirMenu,
+.cerrarMenu {
+  display: none;
+}
+
+#Contenedor h2 {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #E8CC59;
+  text-decoration-thickness: 4px;
+}
+
+#cajaImagen {
+  border-radius: 5px;
+  border: 2px solid #205f51;
+  background-color: #22806b;
+  cursor: pointer;
+}
+
+#cajaImagen img {
+  object-fit: contain;
+}
+
+.cajasCabecera {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+#cajaMenu {
+  column-gap: 10px;
+}
+
+#cajaMenu--img {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.button {
+  border: 0;
+  font-size: 1.5rem;
+  background-color: transparent;
+  background-color: #E8CC59;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+#cajaColor {
+  background-color: #E8CC59;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cajaColor_toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  transform: scale(0.7);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#cajaColor.active .cajaColor_toggle {
+  left: 25px;
+}
+
+main.active {
+  background-color: #fff;
+  color: black;
+}
+main.active #presentacion {
+  color: white;
+}
+main.active #Certificado {
+  color: black;
+}
+
+input[type=radio] {
+  visibility: hidden;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+main {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+
+#Contenedor {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+#quienSoy {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#presentacion {
+  background-color: #404040;
+  height: 40px;
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#InfoBasica_Texto--desc {
+  display: flex;
+  align-items: center;
+}
+
+#InfoBasica {
+  width: fit-content;
+  height: 100px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+#Bio {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#InfoBasica_Img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+
+#InfoBasica_Img img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.Bio_cajas {
+  display: flex;
+  flex-direction: row;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.Bio_estudios--titulo {
+  color: #fd6084;
+}
+
+#EstudiosUbicacion {
+  font-size: 12px;
+  text-indent: 5px;
+  color: #E8CC59;
+}
+
+#Bio_estudios--ConocimientosLista {
+  font-size: 10px;
+  list-style: square inside;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#contacto_redes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contacto_redes--red {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  color: #808B96;
+}
+
+#Certificado {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.styleBlack {
+  background-color: #005f6b;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.styleWhite {
+  background-color: #2a2829;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808B96;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808B96;
+}
+
+@media (max-width: 700px) {
+  #cajaColor {
+    display: none;
+  }
+  .abrirMenu,
+  .cerrarMenu {
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+  }
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    opacity: 0;
+    visibility: hidden;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: end;
+    justify-content: start;
+    row-gap: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  #Menu {
+    flex-direction: column;
+    align-items: end;
+    row-gap: 15px;
+  }
+}
+#Menu li:hover {
+  color: #E8CC59;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #E8CC59;
+  transition: all 0.3s;
+}
+
+.contacto_redes--red p:hover {
+  color: #E8CC59;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+#InfoBasica_Img:hover {
+  border: 3px solid #22806b;
+  transition: all 0.3s;
+}
+
+#Certificado:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #ff67c0;
+  color: #ff67c0;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,67 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808B96;
+ }
+
+ @media(max-width: 700px){
+
+    #cajaColor{
+        display: none;
+
+    }
+
+    .abrirMenu,
+    .cerrarMenu{
+
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: white;
+    
+    }
+    
+    header{
+        justify-content:space-between;
+    
+
+    }
+
+    nav{
+        opacity: 0;
+        visibility:hidden;
+        width: 25%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: end;
+        justify-content: start;
+        row-gap: 15px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow:  0 0 0 100vmax rgb(0, 0, 0, .5);
+
+        
+        
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    #Menu{
+        flex-direction: column;
+        align-items: end;
+        row-gap: 15px;
+        
+
+    }
+
+ }

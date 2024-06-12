@@ -1,0 +1,29 @@
+#Menu li:hover{
+    color:#E8CC59;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #E8CC59;
+    transition: all .3s;
+
+}
+
+.contacto_redes--red p:hover{
+    color:#E8CC59;
+    font-size: 15px;
+    transition: all .3s;
+
+}
+
+#InfoBasica_Img:hover {
+    border:3px solid #22806b;
+    transition: all .3s;
+
+}
+
+#Certificado:hover{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #ff67c0;
+    color: #ff67c0;
+
+}
